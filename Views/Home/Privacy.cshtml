@@ -1,15 +1,6 @@
-﻿@model IEnumerable<Metodolgia.Models.Coche>
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
 
-<h2> Listado de coches </h2>
-
-<div>
-        @{
-                 var grid = new WebGrid(Model, defaultSort: "Marca");
-        }
-
-        @grid.GetHtml(columns: grid.Columns(
-        grid.column("Marca"), header:"Marca"),
-        grid.column("Modelo"), header:"Modelo"),
-        grid.column("Color"), header:"Color")
-        ))
-</div>
+<p>Use this page to detail your site's privacy policy.</p>
